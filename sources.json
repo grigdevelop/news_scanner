@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://sharij.net/",
+    "encoding": "utf8",
+    "queries": [
+      {
+        "textQuery": null,
+        "urlQuery": "div.news .block a.title",
+        "relative": false
+      }
+    ]
+  },
+
+  {
+    "url": "https://meduza.io/",
+    "encoding": "utf8",
+    "queries": [
+      {
+        "textQuery": "span",
+        "urlQuery": "article h2 a.Link-root.Link-isInBlockTitle",
+        "relative": true
+      }
+    ]
+  }
+]

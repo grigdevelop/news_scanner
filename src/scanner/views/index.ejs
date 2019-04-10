@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>News scanner by Grig</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <div class="row">
+        <!-- LIST OF SOURCES -->
+        <div class="col">
+            <ul>
+                <li v-for="(item, index) in newsSources">
+                    {{ item.url }}
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item" v-for="(item, index) in newsLinks">
+                    <a :href="item.url">
+                        <div>
+                            <h5>{{ item.text }}</h5>
+                            <small>{{ item.sourceUrl }}</small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button v-on:click="getSources">get sources</button>
+            <button v-on:click="scanSources">scan sources</button>
+        </div>
+
+        <!-- RESULT OF SCAN -->
+        <div class="col">
+            {{ message }}
+        </div>
+
+        <!-- PREVIEW OF ITEM in FRAME -->
+        <div class="col"></div>
+    </div>
+</div>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/axios.js"></script>
+    <script src="/javascripts/vue.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/webApp.js"></script>
+</body>
+</html>
