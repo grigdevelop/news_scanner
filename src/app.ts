@@ -6,7 +6,7 @@ import * as bodyParser from 'body-parser';
 
 
 const app = express();
-const port : number = 4444;
+const port : number = parseInt(process.env.PORT) || 4444;
 import * as path from 'path';
 
 app.use(express.json());
