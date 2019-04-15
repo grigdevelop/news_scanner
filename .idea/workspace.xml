@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="scanner loading">
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/utils/asyncUtil.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/utils/configUtil.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/utils/httpUtil.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scanner/lib/newsDocument.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/lib/newsDocument.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scanner/newsSource.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/newsSource.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scanner/scanner.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/scanner.api.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,37 +24,43 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scanner/views/index.ejs">
+        <entry file="file://$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+            <state relative-caret-position="-17">
+              <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/webApp.js">
+        <entry file="file://$PROJECT_DIR$/src/scanner/utils/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources.json">
+        <entry file="file://$PROJECT_DIR$/src/scanner/utils/asyncUtil.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="238">
+              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -55,22 +69,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/scanner/utils/configUtil.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="187">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding>
-                <element signature="e#50#100#0" expanded="true" />
-                <element signature="e#394#433#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scanner/scanner.api.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-136">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -89,10 +93,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scanner/newsSource.service.ts">
+        <entry file="file://$PROJECT_DIR$/src/scanner/utils/httpUtil.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="544">
+              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.test.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,14 +147,19 @@
         <option value="$PROJECT_DIR$/src/scanner/lib/index.ts" />
         <option value="$PROJECT_DIR$/src/scanner/lib/NewsLink.ts" />
         <option value="$PROJECT_DIR$/src/scanner/lib/newsSource.ts" />
-        <option value="$PROJECT_DIR$/src/scanner/lib/newsDocument.ts" />
-        <option value="$PROJECT_DIR$/src/scanner/newsSource.service.ts" />
-        <option value="$PROJECT_DIR$/src/scanner/scanner.api.ts" />
         <option value="$PROJECT_DIR$/public/javascripts/webApp.js" />
         <option value="$PROJECT_DIR$/src/scanner/views/index.ejs" />
         <option value="$PROJECT_DIR$/sources.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/utils/httpUtil.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/utils/asyncUtil.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/utils/index.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/scanner.api.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/utils/configUtil.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/newsSource.service.ts" />
+        <option value="$PROJECT_DIR$/src/scanner/lib/newsDocument.ts" />
       </list>
     </option>
   </component>
@@ -160,29 +184,6 @@
             <path>
               <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scanner" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.debug">
+  <component name="RunManager" selected="Mocha.NewsDocument tests">
     <configuration name="debug" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -244,14 +245,53 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="NewsDocument tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--inspect --require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts</test-file>
+      <test-names>
+        <name value="NewsDocument tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsDocument tests.getAllNewsLinks tests.no links found" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--inspect --require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts</test-file>
+      <test-names>
+        <name value="NewsDocument tests" />
+        <name value="getAllNewsLinks tests" />
+        <name value="no links found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--inspect --require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts</test-file>
+      <test-names>
+        <name value="NewsDocument tests" />
+        <name value="getAllNewsLinks tests" />
+        <name value="should get all news links" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner">
@@ -304,13 +344,17 @@
       <item itemvalue="Node.js.bin\www" />
       <item itemvalue="npm.start" />
       <item itemvalue="npm.debug" />
-      <item itemvalue="npm.test" />
+      <item itemvalue="Mocha.NewsDocument tests" />
+      <item itemvalue="Mocha.NewsDocument tests.getAllNewsLinks tests.should get all news links" />
+      <item itemvalue="Mocha.NewsDocument tests.getAllNewsLinks tests.no links found" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.NewsDocument tests" />
+        <item itemvalue="Mocha.NewsDocument tests.getAllNewsLinks tests.no links found" />
+        <item itemvalue="Mocha.NewsDocument tests.getAllNewsLinks tests.should get all news links" />
         <item itemvalue="Mocha.app tests" />
         <item itemvalue="Mocha.app tests.should do request" />
-        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +374,7 @@
       <workItem from="1554806129216" duration="24088000" />
       <workItem from="1554967417884" duration="599000" />
       <workItem from="1555229044652" duration="599000" />
-      <workItem from="1555335050717" duration="8077000" />
+      <workItem from="1555335050717" duration="15099000" />
     </task>
     <task id="LOCAL-00001" summary="some routing setup">
       <created>1554740068626</created>
@@ -350,39 +394,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="app_tests - 2019.04.08 at 10h 48m 54s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 10h 49m 48s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 10h 50m 07s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 10h 51m 17s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 10h 51m 19s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 10h 53m 48s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests - 2019.04.08 at 11h 00m 27s.xml">
-      <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="app_tests_should_do_request - 2019.04.08 at 11h 00m 39s.xml">
-      <configuration name="app tests.should do request" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="app_tests - 2019.04.08 at 11h 01m 00s.xml">
       <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
     <history-entry file="app_tests - 2019.04.08 at 17h 53m 03s.xml">
       <configuration name="app tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="NewsDocument_tests - 2019.04.15 at 22h 10m 36s.xml">
+      <configuration name="NewsDocument tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_should_get_all_news_links - 2019.04.15 at 22h 13m 16s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_should_get_all_news_links - 2019.04.15 at 22h 14m 42s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_should_get_all_news_links - 2019.04.15 at 22h 15m 01s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_should_get_all_news_links - 2019.04.15 at 22h 16m 57s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_should_get_all_news_links - 2019.04.15 at 22h 40m 19s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.should get all news links" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests_getAllNewsLinks_tests_no_links_found - 2019.04.15 at 22h 40m 30s.xml">
+      <configuration name="NewsDocument tests.getAllNewsLinks tests.no links found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="NewsDocument_tests - 2019.04.15 at 22h 41m 12s.xml">
+      <configuration name="NewsDocument tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52222000" />
+    <option name="totallyTimeSpent" value="59244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,14 +441,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37486458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37486458" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -521,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/btc-markets/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -566,23 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scanner/newsSource.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scanner/scanner.api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/webApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -604,16 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -623,11 +633,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#50#100#0" expanded="true" />
             <element signature="e#394#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/utils/httpUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/test/newsDocument.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/utils/asyncUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/utils/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/scanner.api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/utils/configUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/newsSource.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

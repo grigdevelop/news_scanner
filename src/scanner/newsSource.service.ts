@@ -1,63 +1,48 @@
 import {NewsDocument, NewsLink, NewsSource} from "./lib";
-import * as fs from 'fs';
-import * as path from 'path';
+import {IHttpUtil, AsyncUtil, IConfigUtil, ConfigUtil} from "./utils";
+
+interface INewsServiceContext {
+    http: IHttpUtil;
+}
 
 class NewsSourceService {
 
-    getSources(): Promise<NewsSource[]> {
-        return new Promise( async ( resolve, reject) => {
-            const sources = this.getSourcesFromJson();
-            resolve(sources);
-        });
+    constructor(private context : INewsServiceContext){
+
     }
 
-    scanSources(): Promise<NewsLink[]> {
-        return new Promise<NewsLink[]>( async (resolve, reject) => {
-            try {
-                const sources = this.getSourcesFromJson();
-                const newsLinks : NewsLink[] = [];
+    async getSources(): Promise<NewsSource[]> {
+        return await this.getSourcesFromJson();
+    }
 
-                await this.asyncForeach(sources, async ( source ) => {
-                    const document = await NewsDocument.loadAsync(source);
-                    const links = await document.getAllNewsLinks();
+    async scanSources(): Promise<NewsLink[]> {
+        const sources : NewsSource[] = await this.getSourcesFromJson();
+        const newsLinks : NewsLink[] = [];
 
-                    for(let linkKey in links){
-                        newsLinks.push(links[linkKey]);
-                    }
-                });
+        await AsyncUtil.forEach(sources, async ( source : NewsSource ) => {
+            const html  = await this.context.http.doGet(source.url);
+            const document = await NewsDocument.loadAsync(source, html);
+            const links = await document.getAllNewsLinks();
 
-                resolve(newsLinks);
-            } catch (e) {
-                reject(e);
+            for(let linkKey in links){
+                newsLinks.push(links[linkKey]);
             }
         });
+
+        return newsLinks;
     }
 
-    scanSource(source: NewsSource) : Promise<NewsLink[]> {
-        return new Promise<NewsLink[]>( async ( resolve, reject ) => {
-            try{
-                const document = await NewsDocument.loadAsync(source);
-                const links = await document.getAllNewsLinks();
-                resolve(links);
-            } catch(error){
-                reject(error);
-            }
-
-        } );
+    async scanSource(source: NewsSource) : Promise<NewsLink[]> {
+        const html = await this.context.http.doGet(source.url);
+        const document = await NewsDocument.loadAsync(source, html);
+        return await document.getAllNewsLinks();
     }
 
-    private async asyncForeach<T>(array : T[], callback: (T) => void){
-        for (let index = 0; index < array.length; index++) {
-            await callback(array[index]);
-        }
-    }
-
-    private getSourcesFromJson() : NewsSource[] {
-        const sPath = path.join(__dirname, '../../', 'sources.json');
-        const sources : NewsSource[] = JSON.parse(fs.readFileSync(sPath, 'utf8'));
-        return sources;
+    private async getSourcesFromJson() : Promise<NewsSource[]> {
+        const configUtil : IConfigUtil  = new ConfigUtil();
+        return configUtil.readDataAsync<NewsSource[]>('sources.json');
     }
 
 }
 
-export { NewsSourceService };
+export { NewsSourceService, INewsServiceContext };
