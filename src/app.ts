@@ -14,15 +14,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded()); 
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname);
 
-import btcMarkets from './btc-markets';
 import scannerRoutes from './scanner';
 
-app.use('/markets', btcMarkets);
 app.use('/scanner', scannerRoutes);
 
 app.use(lessMiddleware(path.join(__dirname,'../', 'public')));
