@@ -1,4 +1,4 @@
-import {NewsDocument, NewsLink, NewsSource} from "./newsSource";
+import {NewsDocument, NewsLink, NewsSource} from "./lib";
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -31,6 +31,19 @@ class NewsSourceService {
                 reject(e);
             }
         });
+    }
+
+    scanSource(source: NewsSource) : Promise<NewsLink[]> {
+        return new Promise<NewsLink[]>( async ( resolve, reject ) => {
+            try{
+                const document = await NewsDocument.loadAsync(source);
+                const links = await document.getAllNewsLinks();
+                resolve(links);
+            } catch(error){
+                reject(error);
+            }
+
+        } );
     }
 
     private async asyncForeach<T>(array : T[], callback: (T) => void){

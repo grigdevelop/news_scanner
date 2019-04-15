@@ -1,23 +1,56 @@
 [
   {
-    "url": "https://sharij.net/",
+    "id": 1,
+    "url": "https://news.am/",
     "encoding": "utf8",
     "queries": [
       {
-        "textQuery": null,
-        "urlQuery": "div.news .block a.title",
-        "relative": false
+        "textQuery": "span",
+        "urlQuery": "a.news-item",
+        "relative": true
       }
     ]
   },
 
   {
+    "id": 2,
     "url": "https://meduza.io/",
     "encoding": "utf8",
     "queries": [
       {
         "textQuery": "span",
         "urlQuery": "article h2 a.Link-root.Link-isInBlockTitle",
+        "relative": true
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "url": "https://lenta.ru/",
+    "encoding": "utf8",
+    "queries": [
+      {
+        "textQuery": null,
+        "urlQuery": ".js-main__content div.item a",
+        "relative": true
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "url": "https://www.vedomosti.ru/",
+    "encoding": "utf8",
+    "queries": [
+      {
+        "textQuery": null,
+        "urlQuery": ".b-news__item__title a",
+        "relative": true
+      },
+      {
+        "textQuery": null,
+        "urlQuery": ".b-article__title a",
         "relative": true
       }
     ]

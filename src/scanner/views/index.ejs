@@ -2,34 +2,54 @@
 <head>
     <title>News scanner by Grig</title>
     <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
+    <style type="text/css">
+        .list-group-scroll {
+            max-height: 300px;
+            margin-bottom: 10px;
+            overflow:scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
 </head>
 <body>
 <div id="app" class="container-fluid">
+
+
     <div class="row">
+
         <!-- LIST OF SOURCES -->
         <div class="col">
-            <ul>
-                <li v-for="(item, index) in newsSources">
-                    {{ item.url }}
+            <h3>Sources</h3>
+<!--            <button class="btn btn-primary" v-on:click="getSources">get sources</button>-->
+            <hr/>
+
+            <ul class="list-group">
+                <li class="list-group-item" v-for="(item, index) in newsSources">
+                    {{ item.url }} <button :disabled="state.links.loading" v-on:click="scanSource(item)" class="btn btn-primary btn-sm">scan</button>
                 </li>
             </ul>
-            <ul class="list-group">
+        </div>
+
+        <div class="col">
+            <h3>News titles</h3>
+<!--            <button class="btn btn-primary" v-on:click="scanSources">scan for titles</button>-->
+            <hr/>
+
+            <div v-if="state.links.loading">
+                <img src="/images/831.gif" alt="loading">
+            </div>
+
+            <ul v-if="state.links.loading == false" class="list-group">
                 <li class="list-group-item" v-for="(item, index) in newsLinks">
-                    <a :href="item.url">
+                    <a :href="item.url" target="_blank">
                         <div>
-                            <h5>{{ item.text }}</h5>
+                            <h6>{{ item.text }}</h6>
                             <small>{{ item.sourceUrl }}</small>
                         </div>
                     </a>
                 </li>
             </ul>
-            <button v-on:click="getSources">get sources</button>
-            <button v-on:click="scanSources">scan sources</button>
-        </div>
-
-        <!-- RESULT OF SCAN -->
-        <div class="col">
-            {{ message }}
         </div>
 
         <!-- PREVIEW OF ITEM in FRAME -->
@@ -40,6 +60,7 @@
     <script src="/javascripts/axios.js"></script>
     <script src="/javascripts/vue.js"></script>
     <script src="/javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
     <script src="/javascripts/webApp.js"></script>
 </body>
 </html>

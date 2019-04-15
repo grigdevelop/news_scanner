@@ -1,13 +1,9 @@
-import axios, {AxiosRequestConfig, AxiosResponse} from 'axios';
-import { JSDOM} from "jsdom";
-import * as windows1251 from 'windows-1251';
-
-class NewsSource {
-
-    public queries: QueryNewsLink[] = [];
-    public url: string;
-    public encoding: string;
-}
+import {JSDOM} from "jsdom";
+import axios, {AxiosRequestConfig, AxiosResponse} from "axios";
+import * as windows1251 from "windows-1251";
+import {NewsSource} from "./newsSource";
+import {NewsLink} from "./NewsLink";
+import { QueryNewsLink} from "./queryNewsLink";
 
 class NewsDocument {
 
@@ -30,8 +26,8 @@ class NewsDocument {
 
                     // TODO: text should by child or current node of url node
                     //if(urlList.length != textList.length){
-                     //   reject(new Error('text results and link results are different'));
-                     //   return;
+                    //   reject(new Error('text results and link results are different'));
+                    //   return;
                     //}
 
                     const length : number = urlList.length;
@@ -63,7 +59,7 @@ class NewsDocument {
                         }
 
                         // adding url link
-                        linkList.push(new NewsLink(urlUrl, textText, this.newsSource.url));
+                        linkList.push(new NewsLink(urlUrl, textText, this.newsSource.url, this.newsSource.id));
                     }
                 }
 
@@ -130,20 +126,4 @@ class NewsDocument {
     }
 }
 
-class NewsLink {
-    constructor(
-        public url: string,
-        public text: string,
-        public sourceUrl: string
-    ){
-
-    }
-}
-
-class QueryNewsLink {
-    public urlQuery: string;
-    public textQuery: string;
-    public relative: boolean;
-}
-
-export { NewsSource, NewsLink, NewsDocument };
+export { NewsDocument };
