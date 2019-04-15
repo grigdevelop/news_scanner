@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scanner/lib/newsDocument.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources.json" beforeDir="false" afterPath="$PROJECT_DIR$/sources.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/newsSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/newsSource.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/views/index.ejs" afterDir="false" />
+    <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="scanner loading">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,16 +30,37 @@
         <entry file="file://$PROJECT_DIR$/public/javascripts/webApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sources.json">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="85">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -49,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/app.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="e#50#100#0" expanded="true" />
                 <element signature="e#394#433#0" expanded="true" />
@@ -105,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/btc-markets/views/index.ejs" />
         <option value="$PROJECT_DIR$/src/scanner/scanner.ts" />
         <option value="$PROJECT_DIR$/src/scanner/index.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/scanner/newsSource.ts" />
         <option value="$PROJECT_DIR$/src/scanner/lib/queryNewsLink.ts" />
         <option value="$PROJECT_DIR$/src/scanner/lib/index.ts" />
@@ -118,6 +137,7 @@
         <option value="$PROJECT_DIR$/public/javascripts/webApp.js" />
         <option value="$PROJECT_DIR$/src/scanner/views/index.ejs" />
         <option value="$PROJECT_DIR$/sources.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -312,7 +332,7 @@
       <workItem from="1554806129216" duration="24088000" />
       <workItem from="1554967417884" duration="599000" />
       <workItem from="1555229044652" duration="599000" />
-      <workItem from="1555335050717" duration="5507000" />
+      <workItem from="1555335050717" duration="7306000" />
     </task>
     <task id="LOCAL-00001" summary="some routing setup">
       <created>1554740068626</created>
@@ -364,7 +384,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49652000" />
+    <option name="totallyTimeSpent" value="51451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,8 +405,8 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298731" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37486458" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37486458" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -407,7 +427,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some routing setup" />
     <MESSAGE value="basic parsing setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic parsing setup" />
+    <MESSAGE value="scanner loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="scanner loading" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -526,16 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scanner/lib/NewsLink.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -577,25 +588,18 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/webApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="e#50#100#0" expanded="true" />
             <element signature="e#394#433#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -608,8 +612,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="512">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/lib/newsDocument.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
