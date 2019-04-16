@@ -6,7 +6,7 @@ import {HttpUtil} from "./utils";
 const router = express.Router();
 
 router.get('/', (request: express.Request, response: express.Response) => {
-    response.render('scanner/views/index');
+    response.render('components/scanner/views/index');
 });
 
 router.post('/getSources', async (request, response, next) => {

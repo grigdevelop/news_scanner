@@ -1,6 +1,8 @@
 import 'mocha';
 import { expect } from 'chai';
 import {NewsDocument, NewsLink, NewsSource} from "../lib";
+import {JSDOM} from "jsdom";
+import axios, { AxiosResponse} from 'axios';
 
 
 describe("NewsDocument tests", () => {
@@ -62,6 +64,19 @@ describe("NewsDocument tests", () => {
             expect(links).to.be.empty;
         });
 
+        it('should download page', async () => {
+
+            const htmlBuffer : AxiosResponse<ArrayBuffer>  = await axios.get<ArrayBuffer>('https://meduza.io/', {
+                responseType: 'arraybuffer'
+            });
+
+
+            const dom = new JSDOM(htmlBuffer.data, {
+                url: 'https://meduza.io/'
+            });
+            const result = dom.window.document.querySelectorAll('a.Link-root');
+            const temp = 1;
+        });
 
     });
 
