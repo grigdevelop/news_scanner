@@ -5,6 +5,7 @@ class NewsSource {
     public queries: QueryNewsLink[] = [];
     public url: string;
     public encoding: string;
+    public userId: number;
 }
 
 export { NewsSource };

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="scanner loading">
-      <change afterPath="$PROJECT_DIR$/src/components/auth/validate.auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/newsSources.api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/newsSources.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/components/profile/profile.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/components/profile/profile.view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/services/auth.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/services/request.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/login/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login/login.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/login/login.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login/login.view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/auth.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/auth.api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scanner/newsSource.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scanner/scanner.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scanner/scanner.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scanner/scanner.api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setup/passport.setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/passport.setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/newsSources.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/newsSources.api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/newsSources.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/newsSources.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,44 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/services/auth.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/services/newsSources.service.ts">
+        <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/newsSources.api.ts">
+        <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/scanner/scanner.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -77,17 +74,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>about</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>profile</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/app.test.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/btc-markets/btcMarket.ts" />
-        <option value="$PROJECT_DIR$/src/btc-markets/index.ts" />
         <option value="$PROJECT_DIR$/src/btc-markets/btcMarket.api.ts" />
         <option value="$PROJECT_DIR$/src/btc-markets/views/index.ejs" />
         <option value="$PROJECT_DIR$/src/scanner/scanner.ts" />
@@ -120,11 +120,8 @@
         <option value="$PROJECT_DIR$/src/client/app.js" />
         <option value="$PROJECT_DIR$/src/client/components/about/about.view.html" />
         <option value="$PROJECT_DIR$/src/client/components/about/about.component.js" />
-        <option value="$PROJECT_DIR$/src/client/index.html" />
         <option value="$PROJECT_DIR$/src/services/user.service.ts" />
         <option value="$PROJECT_DIR$/src/components/auth/index.ts" />
-        <option value="$PROJECT_DIR$/src/app.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/client/components/login/login.view.html" />
         <option value="$PROJECT_DIR$/src/components/auth/validate.auth.ts" />
         <option value="$PROJECT_DIR$/src/client/components/login/login.component.js" />
@@ -132,8 +129,16 @@
         <option value="$PROJECT_DIR$/src/setup/passport.setup.ts" />
         <option value="$PROJECT_DIR$/src/components/scanner/scanner.service.ts" />
         <option value="$PROJECT_DIR$/src/components/scanner/scanner.api.ts" />
-        <option value="$PROJECT_DIR$/src/routes/newsSources.api.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts" />
         <option value="$PROJECT_DIR$/src/services/newsSources.service.ts" />
+        <option value="$PROJECT_DIR$/src/services/index.ts" />
+        <option value="$PROJECT_DIR$/src/routes/newsSources.api.ts" />
+        <option value="$PROJECT_DIR$/src/app.ts" />
+        <option value="$PROJECT_DIR$/src/client/components/profile/about.component.js" />
+        <option value="$PROJECT_DIR$/src/client/services/auth.service.js" />
+        <option value="$PROJECT_DIR$/src/client/index.html" />
+        <option value="$PROJECT_DIR$/src/client/services/request.service.js" />
       </list>
     </option>
   </component>
@@ -168,12 +173,13 @@
               <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="news_scanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="news_scanner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -372,7 +378,7 @@
       <workItem from="1555335050717" duration="16643000" />
       <workItem from="1555365913953" duration="144000" />
       <workItem from="1555366250517" duration="746000" />
-      <workItem from="1555367583189" duration="30599000" />
+      <workItem from="1555367583189" duration="35084000" />
     </task>
     <task id="LOCAL-00001" summary="some routing setup">
       <created>1554740068626</created>
@@ -424,7 +430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92277000" />
+    <option name="totallyTimeSpent" value="96762000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,31 +477,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="scanner loading" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="10654" column="4" selection-start-line="10654" selection-start-column="4" selection-end-line="10654" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btc-markets/views/index.ejs" />
-    <entry file="file://$PROJECT_DIR$/src/components/scanner/lib/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/scanner/lib/NewsLink.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -681,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/express/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -750,24 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -777,17 +737,6 @@
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#100#0" expanded="true" />
-            <element signature="e#284#333#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,27 +778,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="299">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/newsSources.api.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/scanner/lib/newsSource.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/newsSources.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="469">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/newsSources.api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#50#100#0" expanded="true" />
+            <element signature="e#284#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
         </state>
       </provider>
     </entry>

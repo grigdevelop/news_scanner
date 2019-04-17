@@ -9,6 +9,7 @@ import passportSetup from './setup/passport.setup';
 // routes
 import scannerRoutes from './components/scanner';
 import authRoutes from './components/auth';
+import newsSourcesRoutes from './routes/newsSources.api';
 
 const app = express();
 const port : number = parseInt(process.env.PORT) || 4444;
@@ -28,6 +29,7 @@ passportSetup(app);
 
 app.use('/api/scanner', scannerRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/newsSources', newsSourcesRoutes);
 
 app.use(lessMiddleware(path.join(__dirname,'../', 'public')));
 app.use(express.static(path.join(__dirname,'../', 'public')));
