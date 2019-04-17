@@ -1,5 +1,5 @@
 import * as express from 'express';
-import {INewsServiceContext, NewsSourceService} from "./newsSource.service";
+import { IScannerServiceContext, ScannerService} from "./scanner.service";
 import {NewsSource} from "./lib";
 import {HttpUtil} from "./utils";
 
@@ -11,10 +11,10 @@ router.get('/', (request: express.Request, response: express.Response) => {
 
 router.post('/getSources', async (request, response, next) => {
     try{
-        const context : INewsServiceContext = {
+        const context : IScannerServiceContext = {
           http: new HttpUtil()
         };
-        const service: NewsSourceService = new NewsSourceService(context);
+        const service: ScannerService = new ScannerService(context);
         const result = await service.getSources();
         response.json(result);
     } catch (e) {
@@ -25,10 +25,10 @@ router.post('/getSources', async (request, response, next) => {
 
 router.post('/scanSources', async (request, response, next) => {
     try{
-        const context : INewsServiceContext = {
+        const context : IScannerServiceContext = {
             http: new HttpUtil()
         };
-        const service: NewsSourceService = new NewsSourceService(context);
+        const service: ScannerService = new ScannerService(context);
         const result = await service.scanSources();
         response.json(result);
     } catch (e) {
@@ -39,12 +39,12 @@ router.post('/scanSources', async (request, response, next) => {
 
 router.post('/scanSource', async (request, response, next) => {
    try{
-       const context : INewsServiceContext = {
+       const context : IScannerServiceContext = {
            http: new HttpUtil()
        };
 
        const source : NewsSource = request.body.source;
-       const service : NewsSourceService = new NewsSourceService(context);
+       const service : ScannerService = new ScannerService(context);
        const result = await service.scanSource(source);
        response.json(result);
 

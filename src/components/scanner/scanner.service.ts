@@ -1,13 +1,13 @@
 import {NewsDocument, NewsLink, NewsSource} from "./lib";
 import {IHttpUtil, AsyncUtil, IConfigUtil, ConfigUtil} from "./utils";
 
-interface INewsServiceContext {
+interface IScannerServiceContext {
     http: IHttpUtil;
 }
 
-class NewsSourceService {
+class ScannerService {
 
-    constructor(private context : INewsServiceContext){
+    constructor(private context : IScannerServiceContext){
 
     }
 
@@ -45,4 +45,4 @@ class NewsSourceService {
 
 }
 
-export { NewsSourceService, INewsServiceContext };
+export { ScannerService, IScannerServiceContext };

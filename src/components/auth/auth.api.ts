@@ -2,6 +2,7 @@ import * as express from 'express';
 import * as passport from "passport";
 import * as jwt from 'jsonwebtoken';
 import {User} from "./../../services/user.service";
+import isAuthorized from './validate.auth';
 
 const router = express.Router();
 
@@ -20,16 +21,18 @@ router.post('/login', (request, response, next) => {
                response.send( err );
            }
 
-           const token = jwt.sign(user, 'super_secret');
+           const token = jwt.sign({id: user.id, username: user.username}, 'super_secret');
            return response.json({user: token});
         });
-    })(request, response);
+    })(request, response, next);
 
 });
 
-router.post('/validate', (request, response, next) => {
+
+router.post('/validate', passport.authenticate('jwt', { session: false}), (request, response, next) => {
 
     //passport.authorize('local', )
+   response.json({message: 'success access', user: request.user});
 
 });
 
