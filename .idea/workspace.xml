@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="scanner loading">
-      <change afterPath="$PROJECT_DIR$/src/client/services/cache.service.js" afterDir="false" />
+    <list default="true" id="6a7521a3-9d58-4dce-af3d-e99024daf2be" name="Default Changelist" comment="use cacheService instead of local variables for keeping auth info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/login/login.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login/login.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/login/login.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login/login.view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/profile/profile.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/profile/profile.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/components/profile/profile.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/profile/profile.view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/services/request.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/services/request.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/services/cache.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/services/cache.service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,28 +24,67 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.component.js">
+        <entry file="file://$PROJECT_DIR$/src/client/services/auth.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="349">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/services/auth.service.js">
+        <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="126">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/auth/auth.api.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="76" lean-forward="true" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
+        <entry file="file://$PROJECT_DIR$/src/client/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="306">
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/components/login/login.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -49,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/services/cache.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="180">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -58,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="162">
+              <caret line="9" column="83" lean-forward="true" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -68,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -98,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scanner/scanner.ts" />
         <option value="$PROJECT_DIR$/src/scanner/index.ts" />
         <option value="$PROJECT_DIR$/src/scanner/newsSource.ts" />
         <option value="$PROJECT_DIR$/src/scanner/lib/queryNewsLink.ts" />
@@ -125,14 +167,11 @@
         <option value="$PROJECT_DIR$/src/client/components/home.component.js" />
         <option value="$PROJECT_DIR$/src/client/components/home/home.view.html" />
         <option value="$PROJECT_DIR$/src/client/components/home/home.component.js" />
-        <option value="$PROJECT_DIR$/src/client/app.js" />
         <option value="$PROJECT_DIR$/src/client/components/about/about.view.html" />
         <option value="$PROJECT_DIR$/src/client/components/about/about.component.js" />
         <option value="$PROJECT_DIR$/src/services/user.service.ts" />
         <option value="$PROJECT_DIR$/src/components/auth/index.ts" />
-        <option value="$PROJECT_DIR$/src/client/components/login/login.view.html" />
         <option value="$PROJECT_DIR$/src/components/auth/validate.auth.ts" />
-        <option value="$PROJECT_DIR$/src/client/components/login/login.component.js" />
         <option value="$PROJECT_DIR$/src/components/auth/auth.api.ts" />
         <option value="$PROJECT_DIR$/src/setup/passport.setup.ts" />
         <option value="$PROJECT_DIR$/src/components/scanner/scanner.service.ts" />
@@ -144,11 +183,15 @@
         <option value="$PROJECT_DIR$/src/routes/newsSources.api.ts" />
         <option value="$PROJECT_DIR$/src/app.ts" />
         <option value="$PROJECT_DIR$/src/client/components/profile/about.component.js" />
-        <option value="$PROJECT_DIR$/src/client/services/auth.service.js" />
-        <option value="$PROJECT_DIR$/src/client/components/profile/profile.view.html" />
-        <option value="$PROJECT_DIR$/src/client/index.html" />
-        <option value="$PROJECT_DIR$/src/client/services/cache.service.js" />
         <option value="$PROJECT_DIR$/src/client/services/request.service.js" />
+        <option value="$PROJECT_DIR$/src/client/services/cache.service.js" />
+        <option value="$PROJECT_DIR$/src/client/components/profile/profile.view.html" />
+        <option value="$PROJECT_DIR$/src/client/services/auth.service.js" />
+        <option value="$PROJECT_DIR$/src/client/components/profile/profile.component.js" />
+        <option value="$PROJECT_DIR$/src/client/components/login/login.view.html" />
+        <option value="$PROJECT_DIR$/src/client/components/login/login.component.js" />
+        <option value="$PROJECT_DIR$/src/client/index.html" />
+        <option value="$PROJECT_DIR$/src/client/app.js" />
       </list>
     </option>
   </component>
@@ -412,7 +455,7 @@
       <workItem from="1555366250517" duration="746000" />
       <workItem from="1555367583189" duration="36496000" />
       <workItem from="1556027198890" duration="201000" />
-      <workItem from="1556027563060" duration="1253000" />
+      <workItem from="1556027563060" duration="11260000" />
     </task>
     <task id="LOCAL-00001" summary="some routing setup">
       <created>1554740068626</created>
@@ -428,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554940278186</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use cacheService instead of local variables for keeping auth info">
+      <created>1556028929305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556028929305</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -464,7 +514,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99628000" />
+    <option name="totallyTimeSpent" value="109635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +558,8 @@
     <MESSAGE value="some routing setup" />
     <MESSAGE value="basic parsing setup" />
     <MESSAGE value="scanner loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="scanner loading" />
+    <MESSAGE value="use cacheService instead of local variables for keeping auth info" />
+    <option name="LAST_COMMIT_MESSAGE" value="use cacheService instead of local variables for keeping auth info" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/javascripts/webApp.js">
@@ -623,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/scanner/utils/configUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -689,13 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -791,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/newsSources.api.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -808,9 +838,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="76" lean-forward="true" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/auth/auth.api.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="90">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -818,45 +855,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/cache.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/services/auth.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="349">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/services/cache.service.js">
+    <entry file="file://$PROJECT_DIR$/src/client/components/profile/profile.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="126">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/services/request.service.js">
+    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="54">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/login/login.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="83" lean-forward="true" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
         </state>
       </provider>
     </entry>

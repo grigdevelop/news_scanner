@@ -8,7 +8,7 @@
                 $window.localStorage.setItem(key, jsonData);
             };
 
-            service.remoteData = function(key) {
+            service.removeData = function(key) {
                 $window.localStorage.removeItem(key);
             };
 

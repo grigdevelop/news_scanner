@@ -1,5 +1,11 @@
 (function(){
-    function ProfileController(){
+    function ProfileController($scope, $location, authService){
+        console.log('loading profile view');
+
+        $scope.logout = function(){
+            authService.logout();
+            $location.path('/login');
+        };
 
     }
 
@@ -7,8 +13,9 @@
         .config(['$routeProvider', function($routeProvider){
             $routeProvider.when('/profile', {
                 templateUrl: '/components/profile/profile.view.html',
-                controller: 'ProfileCtrl'
+                controller: 'ProfileCtrl',
+                auth: true
             });
         }])
-        .controller('ProfileCtrl', [ProfileController])
+        .controller('ProfileCtrl', ['$scope', '$location', 'authService', ProfileController])
 })();

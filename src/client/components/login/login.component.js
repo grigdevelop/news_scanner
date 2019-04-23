@@ -1,27 +1,15 @@
 (function(){
-    function LoginController($scope, $http){
+    function LoginController($scope, $location, authService){
 
         $scope.loginModel = { username: 'test', password: ''};
-        $scope.user = null;
 
         $scope.login = function(){
-            $http.post('/api/auth/login', $scope.loginModel)
-                .then(function(response){
-                    console.log(response);
-                    $scope.user = response.data.user;
-                }, function(error){
-                   console.error(error);
-                });
-        };
 
-        $scope.safeRequest = function(){
-            var headers = {
-                'Authorization': 'Bearer ' + $scope.user
-            };
-            $http.post('/api/auth/validate', { user: $scope.user }, { headers })
+            authService.login($scope.loginModel)
                 .then(function(response){
-                    console.log(response);
-                }, function(error){
+                    $location.path('/profile');
+                })
+                .catch(function(error){
                    console.error(error);
                 });
         };
@@ -32,8 +20,9 @@
         .config(['$routeProvider', function($routeProvider){
             $routeProvider.when('/login', {
                 templateUrl: '/components/login/login.view.html',
-                controller: 'LoginCtrl'
+                controller: 'LoginCtrl',
+                auth: false
             });
         }])
-        .controller('LoginCtrl', ['$scope', '$http', LoginController])
+        .controller('LoginCtrl', ['$scope', '$location','authService', LoginController])
 })();
