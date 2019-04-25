@@ -8,32 +8,59 @@ import {User} from "../entities";
 const router = express.Router();
 router.use(passport.authenticate('jwt', { session: false}));
 
-router.post('/create', async (request, response) => {
-    const db = await dbSetup();
-    const repo : ISourceRepo = new SourceRepo(db);
-    const user = request.user as User;
+router.post('/create', async (request, response, next) => {
+    try {
+        const db = await dbSetup();
+        const repo : ISourceRepo = new SourceRepo(db);
+        const user = request.user as User;
 
-    const context : ISourcesServiceContext = {
-        repo: repo,
-        user: user
-    };
-    const service = new SourcesService(context);
-    const data = await service.create(request.body.source);
-    response.json(data);
+        const context : ISourcesServiceContext = {
+            repo: repo,
+            user: user
+        };
+        const service = new SourcesService(context);
+        const data = await service.create(request.body.source);
+        response.json(data);
+    } catch (e) {
+        next(e);
+    }
 });
 
-router.post('/', async (request, response) => {
-    const db = await dbSetup();
-    const repo : ISourceRepo = new SourceRepo(db);
-    const user = request.user as User;
+router.post('/update', async (request, response, next) => {
+    try {
+        const db = await dbSetup();
+        const repo : ISourceRepo = new SourceRepo(db);
+        const user = request.user as User;
 
-    const context : ISourcesServiceContext = {
-        repo: repo,
-        user: user
-    };
-    const service = new SourcesService(context);
-    const data = await service.getAll();
-    response.json(data);
+        const context : ISourcesServiceContext = {
+            repo: repo,
+            user: user
+        };
+        const service = new SourcesService(context);
+        const data = await service.update(request.body.source);
+        response.json(data);
+    } catch (e) {
+        next(e);
+    }
+});
+
+router.post('/', async (request, response, next) => {
+    try{
+        const db = await dbSetup();
+        const repo : ISourceRepo = new SourceRepo(db);
+        const user = request.user as User;
+
+        const context : ISourcesServiceContext = {
+            repo: repo,
+            user: user
+        };
+        const service = new SourcesService(context);
+        const data = await service.getAll();
+        response.json(data);
+    } catch (e) {
+        next(e);
+    }
+
 });
 
 export default router;

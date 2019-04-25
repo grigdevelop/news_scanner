@@ -11,6 +11,10 @@
                 return requestService.post('/sources/create', { source });
             };
 
+            service.update = function(source){
+                return requestService.post('/sources/update', { source });
+            };
+
             return service;
         }]);
 })();

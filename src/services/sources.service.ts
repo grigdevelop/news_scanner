@@ -21,8 +21,18 @@ class SourcesService {
         return source;
     }
 
+    public async update(source: Source) : Promise<Source> {
+        Entity.validateOrThrow(source, Source.validationSchema());
+
+        if(source.userId !== this.context.user.id)
+            throw new Error('Permission for change this source denied');
+        source = await this.context.repo.update(source);
+        return source;
+    }
+
     public async getAll() : Promise<Source[]> {
-        return await this.context.repo.getAll();
+        return (await this.context.repo.getAll())
+            .filter(item => item.userId === this.context.user.id);
     }
 }
 

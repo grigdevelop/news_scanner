@@ -2,11 +2,11 @@ import * as joi from 'joi';
 import * as mongoose from 'mongoose';
 
 interface SourceDocument extends Source, mongoose.Document {
-    id: any;
+    _id: any;
 }
 
 abstract class Source  {
-    id: number;
+    _id: string;
     title: string;
     url: string;
     encoding: string;
@@ -15,12 +15,13 @@ abstract class Source  {
 
     static validationSchema() : joi.ObjectSchema {
         const schema = joi.object().keys({
-            id: joi.number(),
+            _id: joi.string().allow(null),
+            __v: joi.number().allow(null),
             title: joi.string().required(),
             url: joi.string().uri().required(),
             encoding: joi.string().required(),
             userId: joi.number().allow(null),
-            queries: joi.array().items(SourceQuery.validationSchema())
+            queries: joi.array().items(SourceQuery.validationSchema()).allow([])
         });
         return schema;
     }
@@ -31,7 +32,7 @@ abstract class Source  {
             url: { type: String },
             encoding: { type: String },
             userId: { type: Number },
-            queries: SourceQuery.dbSchema()
+            queries: [SourceQuery.dbSchema()]
         });
     }
 }
