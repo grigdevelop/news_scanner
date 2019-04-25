@@ -1,6 +1,6 @@
-import { User } from "./user.service";
 import { NewsSource } from "./../components/scanner/lib";
 import * as underscore from 'underscore';
+import { User } from '../entities/user';
 
 interface INewsSourcesServiceContext {
     user: User

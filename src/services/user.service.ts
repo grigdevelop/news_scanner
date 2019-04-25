@@ -1,3 +1,5 @@
+import {User} from "../entities/user";
+
 const users : User[] = [
     {
         id: 1,
@@ -18,10 +20,4 @@ class UserService {
 
 }
 
-interface User {
-    id: number;
-    username: string;
-    passwordHash: string;
-}
-
-export { UserService, User };
+export { UserService };

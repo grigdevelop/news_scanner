@@ -1,11 +1,14 @@
 (function(){
-    function ProfileController($scope, $location, authService){
-        console.log('loading profile view');
+    function ProfileController($scope, $location, sourcesService){
 
-        $scope.logout = function(){
-            authService.logout();
-            $location.path('/login');
-        };
+        onLoad();
+
+        function onLoad() {
+            sourcesService.getAll()
+                .then(function(sources){
+                    console.log(sources);
+                });
+        }
 
     }
 
@@ -17,5 +20,5 @@
                 auth: true
             });
         }])
-        .controller('ProfileCtrl', ['$scope', '$location', 'authService', ProfileController])
+        .controller('ProfileCtrl', ['$scope', '$location', 'sourcesService', ProfileController])
 })();
