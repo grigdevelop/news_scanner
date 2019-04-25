@@ -4,7 +4,11 @@
             var service = { };
 
             service.getAll = function(){
-                return requestService.post('/newsSources/getAll');
+                return requestService.post('/sources/');
+            };
+
+            service.create = function(source){
+                return requestService.post('/sources/create', { source });
             };
 
             return service;

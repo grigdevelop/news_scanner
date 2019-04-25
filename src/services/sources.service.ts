@@ -20,6 +20,10 @@ class SourcesService {
         source = await this.context.repo.add(source);
         return source;
     }
+
+    public async getAll() : Promise<Source[]> {
+        return await this.context.repo.getAll();
+    }
 }
 
 export { SourcesService, ISourcesServiceContext };

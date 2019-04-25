@@ -10,6 +10,7 @@ import passportSetup from './setup/passport.setup';
 import scannerRoutes from './components/scanner';
 import authRoutes from './components/auth';
 import newsSourcesRoutes from './routes/newsSources.api';
+import sourcesRoutes from './routes/sources.api';
 
 // configs
 import configs from './configs';
@@ -33,9 +34,12 @@ passportSetup(app);
 app.use('/api/scanner', scannerRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/newsSources', newsSourcesRoutes);
+app.use('/api/sources', sourcesRoutes);
 
 app.use(lessMiddleware(path.join(__dirname,'../', 'public')));
 app.use(express.static(path.join(__dirname,'../', 'public')));
 app.use("/", express.static(path.join(__dirname, 'client')));
 
 app.listen(port, () => console.log('listening port :', port));
+
+export default app;

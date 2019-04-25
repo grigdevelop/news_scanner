@@ -1,6 +1,11 @@
 import * as joi from 'joi';
+import * as mongoose from 'mongoose';
 
-class Source {
+interface SourceDocument extends Source, mongoose.Document {
+    id: any;
+}
+
+abstract class Source  {
     id: number;
     title: string;
     url: string;
@@ -19,6 +24,16 @@ class Source {
         });
         return schema;
     }
+
+    static dbSchema() : mongoose.Schema {
+        return new mongoose.Schema<Source>({
+            title: { type: String },
+            url: { type: String },
+            encoding: { type: String },
+            userId: { type: Number },
+            queries: SourceQuery.dbSchema()
+        });
+    }
 }
 
 class SourceQuery {
@@ -34,6 +49,15 @@ class SourceQuery {
         });
         return schema;
     }
+
+    static dbSchema() : mongoose.Schema {
+      return new mongoose.Schema<SourceQuery>({
+          textQuery: { type: String },
+          urlQuery: { type: String },
+          relative: { type: Boolean }
+      });
+    };
 }
 
-export { Source, SourceQuery };
+
+export { Source, SourceQuery, SourceDocument };
