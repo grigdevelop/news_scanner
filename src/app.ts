@@ -11,8 +11,11 @@ import scannerRoutes from './components/scanner';
 import authRoutes from './components/auth';
 import newsSourcesRoutes from './routes/newsSources.api';
 
+// configs
+import configs from './configs';
+
 const app = express();
-const port : number = parseInt(process.env.PORT) || 4444;
+const port : number = parseInt(process.env.PORT) || configs.port;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

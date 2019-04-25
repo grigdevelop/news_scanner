@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node-dev --respawn --transpileOnly src/app.ts",
-    "debug": "ts-node-dev --respawn --transpileOnly src/app.ts",
+    "start": "ts-node-dev --respawn --transpileOnly src/server.ts",
+    "debug": "ts-node-dev --respawn --transpileOnly src/server.ts",
     "test": "ts-mocha -p tsconfig.json src/**/*.test.ts"
   },
   "dependencies": {

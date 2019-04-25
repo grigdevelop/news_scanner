@@ -4,8 +4,15 @@ import {ISourcesServiceContext, SourcesService} from "../services/sources.servic
 import {Source} from "../entities/source";
 import * as TypeMoq from 'typemoq';
 import {ISourceRepo} from "../repos/source.repo";
+import {User} from "../entities/user";
 
 describe('SourcesService', () => {
+
+    const sessionUser : User = {
+      id: 1,
+      username: 'test user',
+      passwordHash: 'testpass'
+    };
 
     describe('create', () => {
 
@@ -25,7 +32,8 @@ describe('SourcesService', () => {
                 .verifiable();
 
             const context : ISourcesServiceContext = {
-              repo: mock.object
+                repo: mock.object,
+                user: sessionUser
             };
             const service = new SourcesService(context);
             const source : Source = {
@@ -33,6 +41,7 @@ describe('SourcesService', () => {
                 id: 0,
                 title: 'Meduza.io',
                 url: 'https://meduza.io/',
+                userId: null,
                 queries: [
                     {
                         relative: false,
@@ -44,6 +53,7 @@ describe('SourcesService', () => {
             const actual = await service.create(source);
 
             expect(actual.id).not.equals(0);
+            expect(actual.userId).equals(sessionUser.id);
             mock.verifyAll();
         });
 
